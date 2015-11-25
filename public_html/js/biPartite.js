@@ -329,24 +329,24 @@
     bP.clickSegment = function (data, m, s) {
         console.log("s",s);
         switch (s) {
-            case 0:
+            case 0: "rgb(166,0,245)"
             case 1: "rgb(250,0,240)"
             case 2: "rgb(250,0,142)"
-            case 3:
-            case 4:
+            case 3: "rgb(250,0,75)"
+            case 4: "rgb(250,0,0)"
             case 5: "rgb(250,75,0)"
-            case 6:
-            case 7:
+            case 6: "rgb(255,115,0)"
+            case 7: "rgb(250,172,0)"
             case 8: "rgb(250,217,0)"
             case 9: "rgb(255,252,0)"
             case 10:"rgb(170,250,0)"
-            case 11:
-            case 12:
-            case 13:
-            case 14:
+            case 11:"rgb(27,250,0)"
+            case 12:"rgb(0,245,142)"
+            case 13:"rgb(0,245,245)"
+            case 14:"rgb(0,145,250)"
             case 15:"rgb(0,77,250)"
-            case 16:
-            case 17: "rgb(108,0,245)"
+            case 16:"rgb(0,2,250)"
+            case 17:"rgb(108,0,245)"
         }
         data.forEach(function (k) {
             var newdata = {keys: [], data: []};
