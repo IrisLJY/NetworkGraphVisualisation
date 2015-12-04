@@ -277,8 +277,98 @@ function configSigmaElements(config) {
     $GP.bg2 = $(sigInst._core.domElements.bg2);
     var a = [],
         b,x=1;
-		for (b in sigInst.clusters) a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Group ' + (x++) + ' (' + sigInst.clusters[b].length + ' members)</a></div>');
-    //a.sort();
+		for (b in sigInst.clusters) {
+			if (b == "rgb(166,0,245)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Accommodation and food service activities (' + sigInst.clusters[b].length + ' divisions )</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(250,0,240)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Administrative and support service activities (' + sigInst.clusters[b].length + ' divisions)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(250,0,142)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Agriculture, forestry and fishing (' + sigInst.clusters[b].length + ' divisions)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(250,0,75)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Construction (' + sigInst.clusters[b].length + ' divisions)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(250,0,0))"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Education (' + sigInst.clusters[b].length + ' divisions)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(250,75,0)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Electricity, gas, steam and air conditioning supply (' + sigInst.clusters[b].length + ' division)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(255,115,0)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Financial and insurance activities (' + sigInst.clusters[b].length + ' divisions)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(250,172,0)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Human health and social work activities (' + sigInst.clusters[b].length + ' divisions)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(250,217,0)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Information and communication (' + sigInst.clusters[b].length + ' divisions)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(255,252,0)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Manufacturing (' + sigInst.clusters[b].length + ' divisions)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(170,250,0)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Mining and quarrying (' + sigInst.clusters[b].length + ' divisions)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(27,250,0)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Other service activities (' + sigInst.clusters[b].length + ' divisions)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(0,245,142)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Professional, scientific and technical activities (' + sigInst.clusters[b].length + ' divisions)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(0,245,245)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Public administration and defence; compulsory social security (' + sigInst.clusters[b].length + ' division)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(0,145,250)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Real estate activities (' + sigInst.clusters[b].length + ' division)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(0,77,250)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Transportation and storage (' + sigInst.clusters[b].length + ' divisions)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(0,2,250)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Water supply; sewerage, waste management and remediation activities (' + sigInst.clusters[b].length + ' divisions)</a></div>');
+			}
+		}
+		for (b in sigInst.clusters) {
+			if (b == "rgb(108,0,245)"){
+				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Wholesale and retail trade; repair of motor vehicles and motorcycles (' + sigInst.clusters[b].length + ' divisions)</a></div>');
+			}
+		}
+
+
     $GP.cluster.content(a.join(""));
     b = {
         minWidth: 400,

@@ -8,14 +8,14 @@
     "link": ""
   },
   "text": {
-    "title": "",
+    "title": "Industry Division Relationship",
     "more": "",
-    "intro": ""
+    "intro": "***intro TBD***"
   },
   "legend": {
-    "edgeLabel": "",
-    "colorLabel": "",
-    "nodeLabel": ""
+    "edgeLabel": "Level of Connectivity",
+    "colorLabel": "Industry Section",
+    "nodeLabel": "Industry Division"
   },
   "features": {
     "search": true,
