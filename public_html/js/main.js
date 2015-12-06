@@ -298,7 +298,7 @@ function configSigmaElements(config) {
 			}
 		}
 		for (b in sigInst.clusters) {
-			if (b == "rgb(250,0,0))"){
+			if (b == "rgb(250,0,0)"){
 				a.push('<div style="line-height:12px"><a href="#' + b + '"><div style="width:40px;height:12px;border:1px solid #fff;background:' + b + ';display:inline-block"></div> Education (' + sigInst.clusters[b].length + ' divisions)</a></div>');
 			}
 		}
