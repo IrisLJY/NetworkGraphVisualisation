@@ -15,7 +15,7 @@
 // Pastel:
 //    var colors = ["#D580FE", "#FF80FE", "#FE80DF", "#FE80B9", "#FE8080", "#FE9980", "#FEB380", "#FECC80", "#FEFF80", "#E6FE80", "#CCFE80", "#99FE80", "#80FE80", "#80FEC8", "#80FFFE", "#809FFE", "#AA80FE", "#B580FE"];
 // Bright:
-    var colors = ["#A000F8", "#F800F8", "#FB008E", "#FD004D", "FF0000", "#FF4900", "#FF7400", "#FFAA00", "#FFD300", "#FFFF00", "#A9FE00", "#18FB00", "#00F88E", "#00F7F7", "#008CF8", "#004BF8", "#0000F9", "#6B00F8"];
+    var colors = ["#A000F8", "#F800F8", "#FB008E", "#FD004D", "#FF0000", "#FF4900", "#FF7400", "#FFAA00", "#FFD300", "#FFFF00", "#A9FE00", "#18FB00", "#00F88E", "#00F7F7", "#008CF8", "#004BF8", "#0000F9", "#6B00F8"];
 
     bP.partData = function (data, p) {
         var sData = {};
