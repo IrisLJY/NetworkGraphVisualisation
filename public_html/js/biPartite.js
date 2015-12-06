@@ -327,26 +327,63 @@
     }
 
     bP.clickSegment = function (data, m, s) {
-        console.log("s",s);
-        switch (s) {
-            case 0: window.location.href = "index.html#rgb(166,0,245)";break;
-            case 1: window.location.href = "index.html#rgb(250,0,240)";break;
-            case 2: window.location.href = "index.html#rgb(250,0,142)";break;
-            case 3: window.location.href = "index.html#rgb(250,0,75)";break;
-            case 4: window.location.href = "index.html#rgb(250,0,0)";break;
-            case 5: window.location.href = "index.html#rgb(250,75,0)";break;
-            case 6: window.location.href = "index.html#rgb(255,115,0)";break;
-            case 7: window.location.href = "index.html#rgb(250,172,0)";break;
-            case 8: window.location.href = "index.html#rgb(250,217,0)";break;
-            case 9: window.location.href = "index.html#rgb(255,252,0)";break;
-            case 10:window.location.href = "index.html#rgb(170,250,0)";break;
-            case 11:window.location.href = "index.html#rgb(27,250,0)";break;
-            case 12:window.location.href = "index.html#rgb(0,245,142)";break;
-            case 13:window.location.href = "index.html#rgb(0,245,245)";break;
-            case 14:window.location.href = "index.html#rgb(0,145,250)";break;
-            case 15:window.location.href = "index.html#rgb(0,77,250)";break;
-            case 16:window.location.href = "index.html#rgb(0,2,250)";break;
-            case 17:window.location.href = "index.html#rgb(108,0,245)";break;
+        if (m == 0) {
+            switch (s) {
+                case 0:
+                    window.location.href = "index.html#rgb(166,0,245)";
+                    break;
+                case 1:
+                    window.location.href = "index.html#rgb(250,0,240)";
+                    break;
+                case 2:
+                    window.location.href = "index.html#rgb(250,0,142)";
+                    break;
+                case 3:
+                    window.location.href = "index.html#rgb(250,0,75)";
+                    break;
+                case 4:
+                    window.location.href = "index.html#rgb(250,0,0)";
+                    break;
+                case 5:
+                    window.location.href = "index.html#rgb(250,75,0)";
+                    break;
+                case 6:
+                    window.location.href = "index.html#rgb(255,115,0)";
+                    break;
+                case 7:
+                    window.location.href = "index.html#rgb(250,172,0)";
+                    break;
+                case 8:
+                    window.location.href = "index.html#rgb(250,217,0)";
+                    break;
+                case 9:
+                    window.location.href = "index.html#rgb(255,252,0)";
+                    break;
+                case 10:
+                    window.location.href = "index.html#rgb(170,250,0)";
+                    break;
+                case 11:
+                    window.location.href = "index.html#rgb(27,250,0)";
+                    break;
+                case 12:
+                    window.location.href = "index.html#rgb(0,245,142)";
+                    break;
+                case 13:
+                    window.location.href = "index.html#rgb(0,245,245)";
+                    break;
+                case 14:
+                    window.location.href = "index.html#rgb(0,145,250)";
+                    break;
+                case 15:
+                    window.location.href = "index.html#rgb(0,77,250)";
+                    break;
+                case 16:
+                    window.location.href = "index.html#rgb(0,2,250)";
+                    break;
+                case 17:
+                    window.location.href = "index.html#rgb(108,0,245)";
+                    break;
+            }
         }
         data.forEach(function (k) {
             var newdata = {keys: [], data: []};
