@@ -10,7 +10,7 @@
   "text": {
     "title": "Industry Division Relationship",
     "more": "",
-    "intro": "***intro TBD***"
+    "intro": "The graph shows the relationships among all industry divisions. Node size represents sum of size of companies within the division; width of edges stands for the number of interlocking directorates in two divisions. Search is on division level, while select group is on section level. By clicking on one division node, the interlocking relationship with this division will be shown. By selecting one section in the select group, only the relationships within this section will be shown."
   },
   "legend": {
     "edgeLabel": "Level of Connectivity",
