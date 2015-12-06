@@ -23,82 +23,26 @@ and open the template in the editor.
         </style>
         <script src="js/libs/d3/d3.v3.js" type="text/javascript"></script>
         <script src="js/biPartite.js" type="text/javascript"></script>
-
+        <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
     </head>
     <body>
         <!--<div>Company Distribution by Industry</div>-->
         <script>
-            var sales_data = [
-                ['Accommodation and food service activities', 'Large', 47, 0],
-                ['Accommodation and food service activities', 'Medium', 90, 0],
-                ['Accommodation and food service activities', 'Small', 67, 0],
-                ['Administrative and support service activities', 'Large', 137, 1],
-                ['Administrative and support service activities', 'Medium', 247, 1],
-                ['Administrative and support service activities', 'Small', 302, 1],
-                ['Agriculture, forestry and fishing', 'Large', 66, 0],
-                ['Agriculture, forestry and fishing', 'Medium', 206, 1],
-                ['Agriculture, forestry and fishing', 'Small', 59, 0],
-                ['Construction', 'Large', 986, 4],
-                ['Construction', 'Medium', 505, 2],
-                ['Construction', 'Small', 180, 1],
-                ['Education', 'Large', 8, 0],
-                ['Education', 'Medium', 33, 0],
-                ['Education', 'Small', 12, 0],
-                ['Electricity, gas, steam and air conditioning supply', 'Large', 510, 2],
-                ['Electricity, gas, steam and air conditioning supply', 'Medium', 378, 1],
-                ['Electricity, gas, steam and air conditioning supply', 'Small', 376, 1],
-                ['Financial and insurance activities', 'Large', 824, 3],
-                ['Financial and insurance activities', 'Medium', 110, 0],
-                ['Financial and insurance activities', 'Small', 157, 1],
-                ['Human health and social work activities', 'Large', 3, 0],
-                ['Human health and social work activities', 'Medium', 38, 0],
-                ['Human health and social work activities', 'Small', 12, 0],
-                ['Information and communication', 'Large', 254, 1],
-                ['Information and communication', 'Medium', 573, 2],
-                ['Information and communication', 'Small', 249, 1],
-                ['Manufacturing', 'Large', 3850, 14],
-                ['Manufacturing', 'Medium', 5221, 19],
-                ['Manufacturing', 'Small', 5898, 22],
-                ['Mining and quarrying', 'Large', 487, 2],
-                ['Mining and quarrying', 'Medium', 260, 1],
-                ['Mining and quarrying', 'Small', 266, 1],
-                ['Other service activities', 'Large', 2, 0],
-                ['Other service activities', 'Medium', 10, 0],
-                ['Other service activities', 'Small', 23, 0],
-                ['Professional, scientific and technical activities', 'Large', 69, 0],
-                ['Professional, scientific and technical activities', 'Medium', 88, 0],
-                ['Professional, scientific and technical activities', 'Small', 60, 0],
-                ['Public administration and defence, compulsory social security', 'Large', 2, 0],
-                ['Public administration and defence, compulsory social security', 'Medium', 7, 0],
-                ['Public administration and defence, compulsory social security', 'Small', 6, 0],
-                ['Real estate activities', 'Large', 76, 0],
-                ['Real estate activities', 'Medium', 48, 0],
-                ['Real estate activities', 'Small', 115, 0],
-                ['Transportation and storage', 'Large', 414, 2],
-                ['Transportation and storage', 'Medium', 264, 1],
-                ['Transportation and storage', 'Small', 100, 0],
-                ['Water supply, sewerage, waste management and remediation activities', 'Large', 41, 0],
-                ['Water supply, sewerage, waste management and remediation activities', 'Medium', 126, 0],
-                ['Water supply, sewerage, waste management and remediation activities', 'Small', 153, 1],
-                ['Wholesale and retail trade, repair of motor vehicles and motorcycles', 'Large', 1254, 5],
-                ['Wholesale and retail trade, repair of motor vehicles and motorcycles', 'Medium', 830, 3],
-                ['Wholesale and retail trade, repair of motor vehicles and motorcycles', 'Small', 997, 4]
-            ];
-            
-            console.log("sales_data",sales_data);
+            d3.text("data.csv", function (text) {
+                var sales_data = d3.csv.parseRows(text);
 
-            var width = 1100, height = 500, margin = {b: 0, t: 40, l: 450, r: 50};
+                var width = 1100, height = 500, margin = {b: 0, t: 40, l: 500, r: 50};
 
-            var svg = d3.select("body")
-                    .append("svg").attr('width', width).attr('height', (height + margin.b + margin.t))
-                    .append("g").attr("transform", "translate(" + margin.l + "," + margin.t + ")");
+                var svg = d3.select("body")
+                        .append("svg").attr('width', width).attr('height', (height + margin.b + margin.t))
+                        .append("g").attr("transform", "translate(" + margin.l + "," + margin.t + ")");
 
-            var data = [
-                {data: bP.partData(sales_data, 2), id: 'Sales', header: ["Industry", "Size", "Count of Company"]}
-            ];
+                var data = [
+                    {data: bP.partData(sales_data, 2), id: 'Sales', header: ["Industry", "Size", "Count of Company by Sales"]}
+                ];
 
-            bP.draw(data, svg);
-
+                bP.draw(data, svg);
+            });
         </script>
     </body>
 </html>
